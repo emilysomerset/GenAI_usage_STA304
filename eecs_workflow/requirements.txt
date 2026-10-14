@@ -1,0 +1,6 @@
+ollama
+sentence-transformers
+hdbscan
+pandas
+numpy
+scikit-learn
