@@ -141,7 +141,6 @@ genai_usage_table
 # Summarize reported GenAI use for specific tasks.
 #
 # Restrict the analysis to:
-#   - Students with a1 > 0 and a2 > 0
 #   - Winter 2025 and Fall 2025
 #
 # Each task is summarized separately. Percentages are
@@ -150,8 +149,6 @@ genai_usage_table
 
 genai_task_summary <- work_d %>%
   filter(
-    a1 > 0,
-    a2 > 0,
     term %in% c("Winter 2025", "Fall 2025")
   ) %>%
   pivot_longer(
